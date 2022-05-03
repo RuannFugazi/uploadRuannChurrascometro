@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image.jpg" href="./style/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+    <title>Churrascômetro</title>
+</head>
+<body>
+
+<div id="container">
+    
+    <h1>Churrascômetro</h1>
+
+    <h3 id="indicador">Primeiro passo: Escolha os tipos de carne!</h3>
+    <div id="check">
+        <input id="checkCarne"  type="checkbox" name="proteina" value="Carne"> Carne
+        <input id="checkFrango" type="checkbox" name="proteina" value="Frango"> Frango
+        <input id="checkLinguica" type="checkbox" name="proteina" value="Linguica"> Linguiça
+    </div>
+    <div id="postCheck">
+        <input id="qtdAdultos" type="number" name="qtdAdultos" min="0" placeholder="Quantos adultos?"
+        oninput="validity.valid || (value='');">
+        
+        <input id="qtdCrianca" type="number" name="qtdCrianca" min="0" placeholder="Quantas crianças?"
+        oninput="validity.valid || (value='');">
+        
+        <input id="duracao"    type="number" name="duracao"    min="1" placeholder="Duração do churrasco(h)"
+        oninput="validity.valid || (value='');">
+    </div>
+
+    <button onclick="mostrar()+validar()" id="botao"> Avançar </button>
+    <button onclick="calculoFinal()+postCalculo()" id="botao2">Calcular</button>
+   
+    <div id="resultado">
+    </div>
+    <div id="voltar">
+        <button onclick="voltar()" id="botao3">Voltar</button>
+    </div>
+
+</div>
+
+
+<script src="./script/script.js"></script>
+    
+</body>
+</html>

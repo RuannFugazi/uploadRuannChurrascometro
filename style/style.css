@@ -1,0 +1,44 @@
+body{
+    background-image:url("/style/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+input[type=number]{
+    box-sizing: border-box;
+    padding:5px;
+    width:50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+button{
+    width:25%;
+    margin: auto;
+    display: block;
+    margin-top: 8px;
+    padding: 3px;
+}
+
+#botao2{
+    display:none;
+}
+
+#botao3{
+    display:none;
+}
+
+#container{
+    text-align: center;
+    max-width: 400px;
+    background-color: black;
+    margin:auto;
+    color: orange;
+}
+
+#postCheck{
+    box-sizing: border-box;
+    display:none;
+}
